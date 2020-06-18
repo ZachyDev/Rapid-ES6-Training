@@ -1,3 +1,9 @@
 let message = 'Zachy,expert web technologies';
+// startsWith
 console.log(message.startsWith('Zachy'));
-console.log(message.endsWith('technologies'))
+
+// endsWith
+console.log(message.endsWith('technologies'));
+
+// includes
+console.log(message.includes('Za'));
