@@ -12,5 +12,11 @@ const s2 = Symbol('event');
 // console.log(s === s2); shows false,symbols create a unique id
 
 // built inn registry
-let s = Symbol.for('event');
-console.log(s.toString());
+let s3 = Symbol.for('event');
+let s4 = Symbol.for('eventq');
+console.log(s3 === s4);
+// console.log(s3.toString());
+
+let s5 = Symbol.for('event');
+let description = Symbol.keyFor(s5);
+console.log(description);
