@@ -1,7 +1,7 @@
 // create a new symbol
 const eventSymbol = Symbol('resize the event');
 // console.log(typeof eventSymbol);
-// console.log(eventSymbol.toString()); human readble format
+console.log(eventSymbol.toString()); //human readble format
 
  const CALCULATE_EVENT_SYMBOL = Symbol('Calculate event');
 //  console.log(CALCULATE_EVENT_SYMBOL.toString()); a Symbol can be assigned to const,let and var
@@ -20,3 +20,12 @@ console.log(s3 === s4);
 let s5 = Symbol.for('event');
 let description = Symbol.keyFor(s5);
 console.log(description);
+
+// using Symbols in objects
+
+const student = {
+    name: 'Zachary',
+    [Symbol.for('course')]: 'Computer Science'
+}
+let studCourse = student[Symbol.for('course')];
+console.log(studCourse);
