@@ -33,3 +33,7 @@ console.log(studCourse);
 // returns the lists of properties attached to student
 const allStudentProps = Object.getOwnPropertyNames(student);
 console.log(allStudentProps);
+
+// accessing the symbol value
+const studentSymbolProp = Object.getOwnPropertySymbols(student);
+console.log(studentSymbolProp);
