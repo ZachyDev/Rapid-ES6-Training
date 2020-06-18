@@ -29,3 +29,7 @@ const student = {
 }
 let studCourse = student[Symbol.for('course')];
 console.log(studCourse);
+
+// returns the lists of properties attached to student
+const allStudentProps = Object.getOwnPropertyNames(student);
+console.log(allStudentProps);
