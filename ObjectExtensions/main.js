@@ -7,7 +7,7 @@ let b = {
 };
 
 Object.setPrototypeOf(a,b);
-console.log(a.y);
+// console.log(a.y);
 
 let studentInfo = {
     name: "Zachary",
@@ -24,3 +24,10 @@ console.log(studentInfo.course2);
 // let studAge = studentInfo[Symbol.for('age')];
 // console.log(studAge);
 // console.log(Object.getOwnPropertySymbols(studentInfo))
+
+let user1 = { name: 'Zachy' };
+let user2 = { name2: 'Finna' };
+
+let usersContainer = {};
+Object.assign(usersContainer,user1,user2);
+console.log(usersContainer);
