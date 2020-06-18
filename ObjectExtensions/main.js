@@ -40,4 +40,9 @@ let amount = NaN;
 // console.log(amount === amount) ;
 console.log(Object.is(amount,amount));
 
+let num1 = 0, num2 = -0;
+// console.log(num1 === num2);
+console.log(Object.is(num1,num2));
+
+
 
