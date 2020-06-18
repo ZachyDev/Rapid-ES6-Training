@@ -36,3 +36,8 @@ let usersContainer = {};
 Object.assign(usersContainer,user1,user2);
 console.log(usersContainer);
 
+let amount = NaN;
+// console.log(amount === amount) ;
+console.log(Object.is(amount,amount));
+
+
