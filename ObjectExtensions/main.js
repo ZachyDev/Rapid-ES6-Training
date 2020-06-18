@@ -27,7 +27,12 @@ console.log(studentInfo.course2);
 
 let user1 = { name: 'Zachy' };
 let user2 = { name2: 'Finna' };
+Object.defineProperty(user2,'name3', {
+    value: 'Doroh',
+    enumerable: true
+});
 
 let usersContainer = {};
 Object.assign(usersContainer,user1,user2);
 console.log(usersContainer);
+
