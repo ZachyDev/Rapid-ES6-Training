@@ -12,7 +12,7 @@ const users = [
    'Zachy',
    'Finna',
    'Doroh'
-]
+];
 
 const showAllUsers = (iter) => {
    return iter.next();
