@@ -21,20 +21,19 @@
 // }
 // console.log(showAllUsers(users[Symbol.iterator]()));
 
-let idMaker = {
+const users = {
     [Symbol.iterator]() {
-        let nextId = 8000;
+        let user = [];
         return {
             next() {
-                return{
-                value: nextId++,
-                done: false
+                return {
+                    user: ['Zachary','Finna'],
+                    done: false
+                   
+                }
             }
         }
     }
-    }
 }
-
-let it = idMaker[Symbol.iterator]();
-console.log(it.next().value);
-console.log(it.next().value);
+let user1 = users[Symbol.iterator]();
+console.log(user1.next().user);
