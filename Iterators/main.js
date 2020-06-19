@@ -21,19 +21,18 @@
 // }
 // console.log(showAllUsers(users[Symbol.iterator]()));
 
-const users = {
+const userList = {
     [Symbol.iterator]() {
-        let user = [];
+        let users = [];
         return {
             next() {
                 return {
-                    user: ['Zachary','Finna'],
+                    value: ['Moseti','Zachary','Finna'],
                     done: false
-                   
                 }
             }
         }
     }
 }
-let user1 = users[Symbol.iterator]();
-console.log(user1.next().user);
+let userAll = userList[Symbol.iterator]();
+console.log(userAll.next().value);
