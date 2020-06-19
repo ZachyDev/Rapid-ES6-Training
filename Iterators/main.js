@@ -9,14 +9,32 @@
 // console.log(it.next());
 
 // Object of users 
-const users = [
-   'Zachy',
-   'Finna',
-   'Doroh'
-]
+// const users = [
+//    'Zachy',
+//    'Finna',
+//    'Doroh'
+// ]
 
-const showAllUsers = (iter) => {
-   return iter.next();
+// const showAllUsers = (iter) => {
+//    return iter.next();
 
+// }
+// console.log(showAllUsers(users[Symbol.iterator]()));
+
+let idMaker = {
+    [Symbol.iterator]() {
+        let nextId = 8000;
+        return {
+            next() {
+                return{
+                value: nextId++,
+                done: false
+            }
+        }
+    }
+    }
 }
-console.log(showAllUsers(users[Symbol.iterator]()));
+
+let it = idMaker[Symbol.iterator]();
+console.log(it.next().value);
+console.log(it.next().value);
