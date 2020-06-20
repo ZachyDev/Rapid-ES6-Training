@@ -25,3 +25,10 @@ let modifiedNumbers = Array.from(randomNumbers,function(number) {
     return number + this.modification;
 },{ modification: 50});
 console.log(modifiedNumbers);
+
+
+// .fill demo
+
+let incomes = [10000,20000,40000];
+incomes.fill(30000);
+console.log(incomes);
