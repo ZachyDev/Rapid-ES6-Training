@@ -15,7 +15,8 @@ function *randomId() {
         yield(nextId++);
     }
 }
-const randomNumber = randomId();
-randomNumber.next();
-randomNumber.next();
-console.log(randomNumber.next());
+// using for-of loop to condion a generator
+for( id of randomId()) {
+    if( id > 2004) break;
+    console.log(id);
+}
