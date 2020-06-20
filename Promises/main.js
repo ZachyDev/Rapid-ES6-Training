@@ -5,7 +5,7 @@ const promise = new Promise((resolve,reject) => {
     resolve('done!');
     // resolve('error in fetching data!');
 });
-promise
+Promise.all([promise])
     .then((value) => {
         setTimeout(() => {
             console.log(`resolving ... ${ value }`);
