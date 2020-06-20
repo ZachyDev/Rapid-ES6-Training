@@ -30,5 +30,15 @@ console.log(modifiedNumbers);
 // .fill demo
 
 let incomes = [10000,20000,40000];
-incomes.fill(30000);
+incomes.fill(30000,-1);
 console.log(incomes);
+
+// .find
+
+let filteredIncome = incomes.find(income => income === 20000)
+console.log(`Filterd income: ${ filteredIncome }`);
+
+// copyWithin
+let wages = [200,500,700];
+wages.copyWithin(2,0);
+console.log(wages);
