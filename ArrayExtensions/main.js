@@ -42,3 +42,9 @@ console.log(`Filterd income: ${ filteredIncome }`);
 let wages = [200,500,700];
 wages.copyWithin(2,0);
 console.log(wages);
+
+// .entries
+let ids = ['A','B','C'];
+console.log(...ids.entries());
+console.log(...ids.keys());
+console.log(...ids.values())
