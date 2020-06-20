@@ -2,7 +2,7 @@
 
 const promise = new Promise((resolve,reject) => {
     console.log('In promise code')
-    reject()
+    resolve()
 });
 promise
     .then(() => {
