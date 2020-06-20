@@ -42,3 +42,13 @@ studentGen.next();
 studentGen.next('Zachary');
 studentGen.next('Finna');
 studentGen.next('Doroh');
+
+// more examples on yield
+
+function *product() {
+    let value = 4 * (yield 30);
+    console.log(value);
+}
+let getProduct = product();
+getProduct.next();
+getProduct.next(10);
