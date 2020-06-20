@@ -10,6 +10,8 @@ promise
             console.log('Resolving...');
         },2000)
     })
-    .catch(error => {
-        console.log('Promise rejected',error);
+    .catch((error)=> {
+        setTimeout(() => {
+            console.log('rejecting...')
+        },2000)
     })
