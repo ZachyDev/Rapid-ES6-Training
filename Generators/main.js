@@ -24,7 +24,21 @@ for( id of randomId()) {
 // another generator
 
 function *students() {
-    yield;
+   let student =  yield;
+   console.log(`Student name is: ${ student }`);
 }
 let student = students();
-console.log(student.next());
+student.next();
+student.next('Zachary');
+
+// using genertors in arrays
+
+function *studetList() {
+    let studentArray = [yield,yield,yield];
+    console.log(studentArray[1]);
+}
+let studentGen = studetList();
+studentGen.next();
+studentGen.next('Zachary');
+studentGen.next('Finna');
+studentGen.next('Doroh');
