@@ -52,3 +52,18 @@ function *product() {
 let getProduct = product();
 getProduct.next();
 getProduct.next(10);
+
+// more on yield
+
+function *users() {
+    yield 'Zachy';
+    yield* ['Doroh','Joy','Rodgers'];
+    yield 'Finna';
+}
+
+const userList = users();
+console.log(userList.next().value);
+console.log(userList.next().value);
+console.log(userList.next().value);
+console.log(userList.next().value);
+console.log(userList.next().value);
