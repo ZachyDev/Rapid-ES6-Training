@@ -20,3 +20,11 @@ for( id of randomId()) {
     if( id > 2004) break;
     console.log(id);
 }
+
+// another generator
+
+function *students() {
+    yield;
+}
+let student = students();
+console.log(student.next());
