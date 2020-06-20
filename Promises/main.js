@@ -2,12 +2,13 @@
 
 const promise = new Promise((resolve,reject) => {
     console.log('In promise code')
-    resolve()
+    resolve('done!');
+    // resolve('error in fetching data!');
 });
 promise
-    .then(() => {
+    .then((value) => {
         setTimeout(() => {
-            console.log('Resolving...');
+            console.log(`resolving ... ${ value }`);
         },2000)
     })
     .catch((error)=> {
