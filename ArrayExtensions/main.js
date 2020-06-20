@@ -17,3 +17,11 @@ let amountIncrease = Array.from(amounts, (amount) => {
     return amount + 200;
 })
 console.log(amountIncrease)
+
+// Array.from in objects
+
+let randomNumbers = [20,40,80];
+let modifiedNumbers = Array.from(randomNumbers,function(number) {
+    return number + this.modification;
+},{ modification: 50});
+console.log(modifiedNumbers);
