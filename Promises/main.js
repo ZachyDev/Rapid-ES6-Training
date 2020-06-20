@@ -5,6 +5,7 @@ const promise = new Promise((resolve,reject) => {
     resolve('done!');
     // resolve('error in fetching data!');
 });
+// Promise.race([promise])
 Promise.all([promise])
     .then((value) => {
         setTimeout(() => {
