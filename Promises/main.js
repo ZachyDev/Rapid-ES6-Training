@@ -2,7 +2,7 @@
 
 const promise = new Promise((resolve,reject) => {
     console.log('In promise code')
-    resolve(secondPromise());
+    resolve('done!');
     // resolve('error in fetching data!');
 });
 promise
